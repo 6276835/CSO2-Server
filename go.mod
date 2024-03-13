@@ -1,4 +1,4 @@
-module github.com/KouKouChan/CSO2-Server
+module github.com/6276835/CSO2-Server
 
 go 1.15
 
