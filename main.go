@@ -46,7 +46,7 @@ import (
 
 var (
 	//SERVERVERSION 版本号
-	SERVERVERSION = "v0.1.0"
+	SERVERVERSION = "v0.8.0"
 )
 
 func ReadHead(client net.Conn) ([]byte, bool) {
@@ -300,7 +300,7 @@ func TCPServer(server net.Listener) {
 	}
 }
 
-//RecvMessage 循环处理收到的包
+// RecvMessage 循环处理收到的包
 func RecvMessage(client net.Conn) {
 	var seq uint8 = 0
 	var dataPacket PacketData
