@@ -9,7 +9,9 @@ import (
 	"golang.org/x/text/transform"
 )
 
-func InitConverter(local string) bool
+func InitConverter(local string) bool {
+	return true
+}
 
 // GbkToUtf8 转换GBK编码到UTF-8编码
 func GbkToUtf8(str []byte) (b []byte, err error) {
