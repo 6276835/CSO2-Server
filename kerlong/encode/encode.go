@@ -9,6 +9,8 @@ import (
 	"golang.org/x/text/transform"
 )
 
+func InitConverter(local string) bool
+
 // GbkToUtf8 转换GBK编码到UTF-8编码
 func GbkToUtf8(str []byte) (b []byte, err error) {
 	r := transform.NewReader(bytes.NewReader(str), simplifiedchinese.GBK.NewDecoder())
